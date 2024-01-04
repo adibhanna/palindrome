@@ -22,12 +22,12 @@ func LongestPalindrome(s string) string {
 }
 
 func expand(s string, left, right int) string {
-    // iterate over the string
-    for left >= 0 && right < len(s) && s[left] == s[right] {
-        // expand the substring
-        left--
-        right++
-    }
+	// iterate over the string
+	for left >= 0 && right < len(s) && s[left] == s[right] {
+		// expand the substring
+		left--
+		right++
+	}
 
-    return s[left+1 : right]
+	return s[left+1 : right]
 }
